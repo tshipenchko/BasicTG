@@ -15,4 +15,15 @@ git clone https://github.com/arersen/BasicTG
 ```
 cd BasicTG
 python install.py
+````
+## Launching
+```
+python main.py
+````
+## Commands
+Since this is not a finalized userbot, it has only one command
+```
+send
+````
+
 
