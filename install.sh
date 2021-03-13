@@ -5,4 +5,4 @@ pip install telethon
 pip install colorama
 apt install git
 git clone https://github.com/arersen/BasicTG
-python install.sh
+python install.py
