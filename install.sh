@@ -6,3 +6,4 @@ pip install colorama
 apt install git
 
 python install.py
+python main.py
