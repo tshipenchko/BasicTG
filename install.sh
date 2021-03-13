@@ -5,5 +5,5 @@ pip install telethon
 pip install colorama
 apt install git
 
-python install.py
-python main.py
+python source/install.py
+python source/main.py
