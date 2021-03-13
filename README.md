@@ -16,10 +16,6 @@ python install.py
 ```
 python main.py
 ````
-## Commands
-Since this is not a finalized userbot, it has only one command
-```
-send
-````
+
 
 
