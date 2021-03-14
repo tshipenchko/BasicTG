@@ -13,3 +13,4 @@ client.start()
 async def handler(event):
 	await event.edit('Pong!')
 client.run_until_disconnected()
+
