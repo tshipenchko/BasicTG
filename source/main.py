@@ -23,4 +23,8 @@ async def handler(event):
 		a +=1
 	time.sleep(randint(1,2))
 	await event.edit('Done!')
+@client.on(events.NewMessage(pattern='(?i).*gay'))
+async def handler(event):
+	p = randint(0,100)
+	await event.edit(f'🏳️‍🌈 I am {str(p)}% gay.')
 client.run_until_disconnected()
