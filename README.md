@@ -18,6 +18,7 @@ python main.py
 ## Commands
 ```
 .ping - Return "Pong!"
+.gay - Return "I am gay rand(0,100)%."
 ````
 
 
