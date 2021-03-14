@@ -15,6 +15,10 @@ python install.py
 ```
 python main.py
 ````
+##Commands
+```
+.ping - Return "Pong!"
+````
 
 
 
