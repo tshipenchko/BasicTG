@@ -6,4 +6,6 @@ pip install colorama
 apt install git
 cd source
 python install.py
-python main.py
+cd .. 
+sh start.sh
+
