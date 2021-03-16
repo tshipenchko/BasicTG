@@ -1,4 +1,5 @@
 while true
 do
-python source/main.py
+cd source
+python main.py
 done
