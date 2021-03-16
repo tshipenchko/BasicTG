@@ -45,6 +45,7 @@ async def handler(event):
 	
 	time.sleep(1)
 	await event.edit('Module installed!')
+	os.remove('module.py')
 	
 
 @client.on(events.NewMessage(pattern='(?i).*ping'))
