@@ -14,6 +14,9 @@ api_hash = config.api_hash()
 #start client
 client = TelegramClient('session_name', api_id, api_hash)
 client.start()
+
+
+
 @client.on(events.NewMessage(pattern='(?i).*restart'))
 async def handler(event):
 	try:
@@ -23,9 +26,29 @@ async def handler(event):
 		os.abort()
 	except:
 		await event.edit(f'Restart failed!')
-import modules
+
 @client.on(events.NewMessage(pattern='(?i).*install'))
 async def handler(event):
-	return 
+	replied = await event.get_reply_message()
+	module_text = 'hello world!'
+	file = open('main.py','r')
+	file_read = file.read()
+	text = file_read.replace('','')
+	file.close()
+	file = open('main.py','w')
+	file.write(text)
+	file.close()
+	file = open('main.py','a')
+	file.write(module_text)
+	file.write('\n')
+	await event.respond(f' {replied}')
+	await event.edit('Module installed!')
+	os.abort()
+
+@client.on(events.NewMessage(pattern='(?i).*ping'))
+async def handler(event):
+
+	await event.edit('Pong!')
+
 
 client.run_until_disconnected()
